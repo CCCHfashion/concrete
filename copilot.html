@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printed Concrete Houses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #03c6fc;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #03a9f4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .tabs div {
+            flex: 1;
+            padding: 10px;
+            background: #03c6fc;
+            color: white;
+            text-align: center;
+            border: 1px solid #03a9f4;
+            border-bottom: none;
+            transition: background 0.3s;
+        }
+        .tabs div:hover {
+            background: #03a9f4;
+        }
+        .tab-content {
+            border: 1px solid #03a9f4;
+            padding: 20px;
+            background: white;
+        }
+        .tab-content div {
+            display: none;
+        }
+        .tab-content div.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>3D Printed Concrete Houses</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="tabs">
+            <div data-tab="introduction">Introduction</div>
+            <div data-tab="global-projects">Global Projects</div>
+            <div data-tab="benefits">Benefits</div>
+            <div data-tab="ireland-project">Ireland Project</div>
+        </div>
+        <div class="tab-content">
+            <div id="introduction" class="active">
+                <h2>Introduction</h2>
+                <p>3D printed houses are built using large-scale 3D printers that extrude concrete or other building materials layer by layer to form the structure of a home. This method is known as additive manufacturing and is revolutionizing the construction industry by offering faster, cheaper, and more sustainable building options.</p>
+            </div>
+            <div id="global-projects">
+                <h2>Global Projects</h2>
+                <h3>Wolf Ranch – Texas, USA</h3>
+                <p><strong>Developers:</strong> ICON & Lennar</p>
+                <p><strong>Scale:</strong> 100 homes – the world’s largest 3D printed housing development</p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>2- and 3-bedroom models</li>
+                    <li>Solar-powered</li>
+                    <li>High resistance to wind and fire</li>
+                    <li>Rounded concrete walls with a corduroy texture</li>
+                </ul>
+                <p><strong>Price:</strong> Starting just under $400,000</p>
+                <p><strong>Impact:</strong> 75% of homes sold; a second, larger development is underway</p>
+                <h3>BioHome3D – USA</h3>
+                <p><strong>Focus:</strong> Sustainability and affordability</p>
+                <p><strong>Materials:</strong> Recyclable forest products and biodegradable materials</p>
+                <p><strong>Innovation:</strong> Uses local wood supply and embedded sensors for monitoring</p>
+                <h3>WASP – Italy</h3>
+                <p><strong>Philosophy:</strong> Eco-friendly, circular economy</p>
+                <p><strong>Technology:</strong> Large-scale 3D printers capable of building homes in hours</p>
+                <p><strong>Notable Projects:</strong> Homes and offices built with clay and natural materials</p>
+                <h3>Citizen Robotics – USA</h3>
+                <p><strong>Specialty:</strong> Custom designs with near-zero construction waste</p>
+                <p><strong>Strengths:</strong> Disaster resilience and sustainable practices</p>
+                <h3>East 17th Street Residences – Austin, Texas</h3>
+                <p><strong>Developers:</strong> ICON & 3Strands</p>
+                <p><strong>Significance:</strong> First 3D printed homes sold in the U.S.</p>
+                <p><strong>Technology:</strong> ICON’s Vulcan system using Lavacrete, a cement-based material</p>
+                <h3>Bosrijk, Eindhoven – Netherlands</h3>
+                <p><strong>Project:</strong> First multi-story 3D printed homes</p>
+                <p><strong>Timeline:</strong> Construction began in early 2025</p>
+                <p><strong>Size:</strong> 110–125 m² homes</p>
+                <p><strong>Innovation:</strong> Marks a leap from single-story to multi-level 3D printed housing</p>
+            </div>
+            <div id="benefits">
+                <h2>Benefits of 3D Printed Concrete Homes</h2>
+                <ul>
+                    <li><strong>Speed:</strong> Homes can be printed in days</li>
+                    <li><strong>Cost:</strong> Lower labor and material costs</li>
+                    <li><strong>Sustainability:</strong> Reduced waste and carbon footprint</li>
+                    <li><strong>Durability:</strong> High resistance to natural disasters</li>
+                    <li><strong>Customization:</strong> Flexible design options</li>
+                </ul>
+            </div>
+            <div id="ireland-project">
+                <h2>Ireland’s First 3D Printed Concrete Homes – Dundalk, Co. Louth</h2>
+                <p><strong>Location:</strong> Grange Close, Dundalk, County Louth</p>
+                <p><strong>Homes:</strong> Three two-storey, three-bedroom terraced houses</p>
+                <p><strong>Size:</strong> Each home has a gross internal area of 110 m²</p>
+                <p><strong>Energy Rating:</strong> A2</p>
+                <p><strong>Construction Time:</strong></p>
+                <ul>
+                    <li><strong>Printing:</strong> 12 print days</li>
+                    <li><strong>Total machine time:</strong> 18 working days</li>
+                    <li><strong>Overall build:</strong> 6 months (May–November 2024)</li>
+                </ul>
+                <p><strong>Technology:</strong> COBOD 3D construction printer on a gantry system</p>
+                <p><strong>Construction Method:</strong> Fully printed cavity walls without concrete blocks</p>
+                <h3>Key Partners</h3>
+                <ul>
+                    <li>Harcourt Technologies Ltd (HTL) – Irish construction tech firm</li>
+                    <li>Louth County Council</li>
+                    <li>Roadstone – Materials supplier</li>
+                    <li>Louth & Meath Education & Training Board (LMETB)</li>
+                    <li>Harcourt Architects</li>
+                </ul>
+                <h3>Benefits & Innovations</h3>
+                <ul>
+                    <li><strong>Speed:</strong> 60% faster than traditional block construction</li>
+                    <li><strong>Efficiency:</strong> 35% reduction in total project delivery time</li>
+                    <li><strong>Cost:</strong> Approx. €253,000 per home (excluding VAT), comparable to traditional builds</li>
+                    <li><strong>Sustainability:</strong> Reduced waste and resource use</li>
+                    <li><strong>Social Impact:</strong> Provided homes for families on the local authority housing list</li>
+                </ul>
+                <h3>Statements</h3>
+                <p><strong>Justin Kinsella, Managing Director of HTL:</strong></p>
+                <blockquote>“We’ve demonstrated how this technology can deliver traditional concrete cavity wall construction with remarkable efficiency.”</blockquote>
+                <p><strong>David Conway, CEO of Louth County Council:</strong></p>
+                <blockquote>“The quality and speed of delivery are a testament to the success of this collaboration.”</blockquote>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tabs = document.querySelectorAll('.tabs div');
+        const tabContents = document.querySelectorAll('.tab-content div');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(item => item.classList.remove('active'));
+                tab.classList.add('active');
+
+                const tabContent = document.querySelector(`#${tab.dataset.tab}`);
+                tabContents.forEach(content => content.classList.remove('active'));
+                tabContent.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

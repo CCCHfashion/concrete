@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D Printed Concrete Houses - Ireland & Innovation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #004d40;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #03c6fc; /* Updated to your blue */
+    }
+    /* Tabs container */
+    .tab {
+      overflow: hidden;
+      border-bottom: 2px solid #03c6fc; /* Updated */
+      margin-bottom: 1.5rem;
+    }
+    /* Tab buttons */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 20px;
+      transition: background-color 0.3s;
+      font-size: 16px;
+      color: #03c6fc; /* Updated */
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      margin-right: 4px;
+    }
+    .tab button:hover {
+      background-color: #b3e5fc; /* lighter shade of #03c6fc */
+    }
+    .tab button.active {
+      background-color: #03c6fc; /* Updated */
+      color: white;
+      font-weight: bold;
+    }
+    /* Tab content */
+    .tabcontent {
+      display: none;
+      animation: fadeEffect 0.5s;
+    }
+    @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #004d40;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>3D Printed Concrete Houses</h1>
+    <p>Innovation in Construction with a Focus on Ireland</p>
+  </header>
+  <main>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
+      <button class="tablinks" onclick="openTab(event, 'Advantages')">Advantages</button>
+      <button class="tablinks" onclick="openTab(event, 'IrelandProject')">Ireland Project</button>
+      <button class="tablinks" onclick="openTab(event, 'Outlook')">Outlook</button>
+    </div>
+
+    <div id="Overview" class="tabcontent">
+      <h2>Overview of 3D Printed Concrete Houses</h2>
+      <p>
+        3D printed concrete houses use large-scale printers to extrude layers of quick-hardening concrete, building walls and structures directly from digital designs. This technology accelerates construction, reduces material waste, and enables complex architectural forms that are difficult to achieve with traditional methods. While foundations and interior finishing still rely on conventional techniques, 3D printing is transforming how housing can be delivered faster and more sustainably.
+      </p>
+    </div>
+
+    <div id="Advantages" class="tabcontent">
+      <h2>Advantages of 3D Printed Concrete Houses</h2>
+      <ul>
+        <li><strong>Speed:</strong> Structures can be printed in days rather than months, with wall printing times reduced to hours.</li>
+        <li><strong>Cost-effectiveness:</strong> Reduced labor and material waste lower overall costs, especially through faster project delivery.</li>
+        <li><strong>Strength and Durability:</strong> Printed concrete can be significantly sturdier than traditional masonry.</li>
+        <li><strong>Sustainability:</strong> Less waste and potential for eco-friendly concrete mixes reduce environmental impact.</li>
+        <li><strong>Customization:</strong> Enables free-form and complex shapes not easily done with blocks or formwork.</li>
+      </ul>
+    </div>
+
+    <div id="IrelandProject" class="tabcontent">
+      <h2>3D Printed Concrete Houses in Ireland: The Grange Close Project</h2>
+      <p>
+        Ireland has been at the forefront of applying 3D printed concrete technology for social housing, notably with the Grange Close development in Dundalk, County Louth.
+      </p>
+      <ul>
+        <li>Three two-storey, three-bedroom social homes (~110 m² each) were built using a gantry-mounted 3D printer by Harcourt Technologies in partnership with Louth County Council and Roadstone.</li>
+        <li>The walls are cavity walls printed without traditional blocks or reinforcement, meeting Eurocode 6 standards for unreinforced masonry with high-strength concrete (47 MPa).</li>
+        <li>The entire project took 132 days from site prep to handover, 35% faster than conventional builds, with the printing phase completed in just 12 days.</li>
+        <li>Labor was cut by about one-third and wall construction speed tripled, resulting in a 25-30% faster overall delivery.</li>
+        <li>The project is the world’s first 3D printed social housing fully compliant with ISO/ASTM 52939:2023 additive construction standards.</li>
+        <li>It won the National Standards Authority of Ireland’s 'Standards Innovation Award' for quality and sustainability.</li>
+        <li>Three local families are set to move into these homes, marking a milestone in affordable housing innovation in Ireland.</li>
+      </ul>
+    </div>
+
+    <div id="Outlook" class="tabcontent">
+      <h2>Outlook for 3D Printed Concrete Houses in Ireland</h2>
+      <p>
+        The success of the Dundalk project demonstrates that 3D printed concrete technology can deliver high-quality, affordable social housing efficiently in Ireland. This positions the country as a leader in adopting cutting-edge construction methods to address housing shortages. As the technology matures, it is expected to scale up and further reduce costs and build times, contributing to sustainable housing solutions nationwide.
+      </p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 3D Printed Concrete Houses Research
+  </footer>
+
+  <script>
+    function openTab(evt, tabName) {
+      // Hide all tabcontent
+      const tabcontent = document.querySelectorAll(".tabcontent");
+      tabcontent.forEach((content) => {
+        content.style.display = "none";
+      });
+
+      // Remove active class from all buttons
+      const tablinks = document.querySelectorAll(".tablinks");
+      tablinks.forEach((btn) => {
+        btn.className = btn.className.replace(" active", "");
+      });
+
+      // Show current tab and add active class to button
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Open default tab on page load
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>
